@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FINALModelStoreContainer" CdmEntityContainer="FINALEntities">
+    <EntitySetMapping Name="ABOUT">
+      <EntityTypeMapping TypeName="FINALModel.ABOUT">
+        <MappingFragment StoreEntitySet="ABOUT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BOOKSILOVE" ColumnName="BOOKSILOVE" />
+          <ScalarProperty Name="AUTHORSILOVE" ColumnName="AUTHORSILOVE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ANNOUNCEMENTS">
+      <EntityTypeMapping TypeName="FINALModel.ANNOUNCEMENTS">
+        <MappingFragment StoreEntitySet="ANNOUNCEMENTS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="ANNOUNCEMENT" ColumnName="ANNOUNCEMENT" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTACT">
+      <EntityTypeMapping TypeName="FINALModel.CONTACT">
+        <MappingFragment StoreEntitySet="CONTACT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAMESURNAME" ColumnName="NAMESURNAME" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+          <ScalarProperty Name="TOPIC" ColumnName="TOPIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGIN">
+      <EntityTypeMapping TypeName="FINALModel.LOGIN">
+        <MappingFragment StoreEntitySet="LOGIN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ILIKE">
+      <EntityTypeMapping TypeName="FINALModel.ILIKE">
+        <MappingFragment StoreEntitySet="ILIKE">
+          <ScalarProperty Name="ILike1" ColumnName="ILike" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOWMANYPAGES">
+      <EntityTypeMapping TypeName="FINALModel.HOWMANYPAGES">
+        <MappingFragment StoreEntitySet="HOWMANYPAGES">
+          <ScalarProperty Name="howmanypage" ColumnName="howmanypage" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BOOKSIREAD">
+      <EntityTypeMapping TypeName="FINALModel.BOOKSIREAD">
+        <MappingFragment StoreEntitySet="BOOKSIREAD">
+          <ScalarProperty Name="ILOVE" ColumnName="ILOVE" />
+          <ScalarProperty Name="AUTHOROFBOOK" ColumnName="AUTHOROFBOOK" />
+          <ScalarProperty Name="BOOKIREAD" ColumnName="BOOKIREAD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

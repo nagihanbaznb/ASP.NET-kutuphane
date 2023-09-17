@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FINALModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ABOUT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BOOKSILOVE" Type="varchar" MaxLength="50" />
+    <Property Name="AUTHORSILOVE" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ANNOUNCEMENTS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TITLE" Type="varchar" MaxLength="500" />
+    <Property Name="ANNOUNCEMENT" Type="varchar" MaxLength="4000" />
+    <Property Name="DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BOOKSIREAD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BOOKIREAD" Type="varchar" MaxLength="100" />
+    <Property Name="AUTHOROFBOOK" Type="varchar" MaxLength="100" />
+    <Property Name="ILOVE" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CONTACT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAMESURNAME" Type="varchar" MaxLength="50" />
+    <Property Name="MAIL" Type="varchar" MaxLength="50" />
+    <Property Name="MESSAGE" Type="varchar" MaxLength="500" />
+    <Property Name="TOPIC" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="HOWMANYPAGES">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="howmanypage" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ILIKE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ILike" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LOGIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="FINALModelStoreContainer">
+    <EntitySet Name="ABOUT" EntityType="Self.ABOUT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ANNOUNCEMENTS" EntityType="Self.ANNOUNCEMENTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BOOKSIREAD" EntityType="Self.BOOKSIREAD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONTACT" EntityType="Self.CONTACT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HOWMANYPAGES" EntityType="Self.HOWMANYPAGES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ILIKE" EntityType="Self.ILIKE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOGIN" EntityType="Self.LOGIN" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
